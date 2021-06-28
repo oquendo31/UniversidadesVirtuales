@@ -1,0 +1,32 @@
+<button mat-button class="menu-button1">
+    <mat-icon>arrow_back_ios</mat-icon>    
+  </button>
+
+<h1>Cuestionario</h1>
+<br>
+<br>
+
+<section class="example-section" [formGroup]="toppings">
+    <h4>¿Como te enteraste de la educacion virtual?':</h4>
+    <p><mat-checkbox formControlName="pepperoni">Redes sociales</mat-checkbox></p>
+    <p><mat-checkbox formControlName="extracheese">Un familiar</mat-checkbox></p>
+    <p><mat-checkbox formControlName="mushroom">Un amigo</mat-checkbox></p>
+  </section>
+<br>
+
+  <section class="example-section" [formGroup]="toppings">
+    <h4>¿Has tenido la oportunidad de estudiar virtual?</h4>
+    <p><mat-checkbox formControlName="pepperoni">Si</mat-checkbox></p>
+    <p><mat-checkbox formControlName="extracheese">No</mat-checkbox></p>   
+  </section>
+  
+ <br>
+
+
+  <section>   
+    <div class="example-button-row">     
+      <button mat-raised-button color="primary">Enviar</button>     
+    </div>
+  </section>
+  
+  

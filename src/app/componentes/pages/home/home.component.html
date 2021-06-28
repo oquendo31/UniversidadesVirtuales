@@ -1,0 +1,21 @@
+<div class="content">
+  <div fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.sm="33%"
+      *ngFor="let num of ['Home','Universidades','Questions','Directory','Suggestion','Contact']">
+      <mat-card class="mat-elevation-z4">
+        <mat-card-header>
+          <mat-card-title> {{num}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image
+          src="https://img.freepik.com/vector-gratis/fondo-blanco-minimo_1393-309.jpg?size=626&ext=jpg"
+          style="cursor:pointer" matTooltip="{{num}}">
+        <mat-card-content>
+
+        </mat-card-content>
+        <mat-card-actions>
+
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
